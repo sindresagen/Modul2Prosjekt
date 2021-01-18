@@ -1,0 +1,16 @@
+const mooSVG = [
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+{/*insert SVG elements here*/ },
+];
