@@ -8,6 +8,11 @@ body{
     align-items: center;
     height: 100vh;
 }
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .button-page{
     width: 700px;
     height: 700px;
@@ -62,13 +67,31 @@ body{
   }
   .list li{
       width: 20vw;
+      padding: 5px;
+      margin: 5px;
       border: 2px solid black;
+      border-radius: 10px;
       text-align: center;
   }
   #returnbtn{
-      font-size: 2rem;
+      font-size: 2rem;  
   }
+#list-info {
+  position: absolute;
+  border: 3px solid black;
+  top: 15vh;
+  left: 35vw;
+  height: 70vh;
+  width: 60vw;
+}
   /* PictureMode page */
+  #picReturnbtn {
+    position: relative;
+    font-size: 2rem;
+    height: 50px;
+    left: -26.7vw;
+  }
+
   .picture-page{
     width: 700px;
     height: 700px;
@@ -77,9 +100,10 @@ body{
   .buttonPic{
     position: relative;
     height: 150px;
-    top: 40vh;
+    top: 0vh;
+    right: -6vw;
     border: none;
-    color: #ffffff;
+    color: blue;
     padding: 12px 24px;
     text-align: center;
     text-decoration: none;
@@ -92,3 +116,85 @@ body{
     justify-content: center;
   }
   
+  .chuck {
+    position: absolute;
+    left: -11.6vw;
+    top: -14.6vh;
+  }
+
+  .brisket {
+    position: absolute;
+    top: 2vh;
+    right: 50.7vw;
+  }
+
+  .rib {
+    position: absolute;
+    top: -12.5vh;
+    right: 40.7vw;
+  }
+
+  .plate {
+    position: absolute;
+    top: 2.1vh;
+    right: 40.9vw;
+  }
+
+  .shortloin {
+    position: absolute;
+    top: -12.5vh;
+    right: 31.15vw;
+  }
+
+  .flank {
+    position: absolute;
+    top: 1.4vh;
+    right: 28.78vw;
+  }
+  
+  .tenderloin {
+    position: absolute;
+    top: -18vh;
+    right: 27.2vw;
+  }
+
+  .sirloin {
+    position: absolute;
+    top: -21.7vh;
+    right: 25.1vw;
+  }
+
+  .topSirloin {
+    position: absolute;
+    top: -14.3vh;
+    right: 23.9vw;
+  }
+
+  .bottomSirloin {
+    position: absolute;
+    top: -4.6vh;
+    right: 23.9vw;
+  }
+
+  .round {
+    position: absolute;
+    top: -11.3vh;
+    right: 18vw;
+  }
+
+  .shankF {
+    position: absolute;
+    top: 10.7vh;
+    right: 48.5vw; 
+  }
+
+  .shankR {
+    position: absolute;
+    top: 6.7vh;
+    right: 18.3vw;
+  }
+
+  #cow {
+    position: relative;
+    top: -500px;
+  }
