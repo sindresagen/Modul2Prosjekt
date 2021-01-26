@@ -30,7 +30,7 @@ function listPgView() {
     for (i = 0; i < model.cuts.length; i++) {
         const cut = model.cuts[i];
         if (cut.animal == 'Cattle') {
-            list += `<li id="list-${i}" onclick="listPgInfo(${i})">${cut.name}</li>`;
+            list += `<li id="list-${i}" onclick="listPgInfo(${i})" style="cursor: pointer;">${cut.name}</li>`;
         }
     }
     liElements.innerHTML += list;
