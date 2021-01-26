@@ -191,8 +191,9 @@ body{
 
 } */
   .chuck {
-    position: absolute;
-    left: -11.6vw;
+    position: relative;
+    /* left: -11.6vw; */
+    transform: scale(1.3);
     top: -14.6vh;
   }
 
@@ -229,7 +230,7 @@ body{
   }
   
   .tenderloin {
-    position: absolute;
+    position: relative;
     top: -18vh;
     right: 27.2vw;
   }

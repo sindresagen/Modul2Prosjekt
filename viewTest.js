@@ -56,19 +56,7 @@ function picturePgView(){
                                 <button id="picReturnbtn" class="fa fa-home" onclick="buttonPgView()" style="top:0vw;left:-34vw;"></button>
                             </div>
                             <div id="cow">
-                            ${cowPics[0].shankR}
-                            ${cowPics[1].shankF}
-                            ${cowPics[2].round}
-                            ${cowPics[3].bottomSirloin}
-                            ${cowPics[4].topSirloin}
-                            ${cowPics[5].sirloin}
-                            ${cowPics[6].tenderloin}
-                            ${cowPics[7].flank}
-                            ${cowPics[8].shortloin}
-                            ${cowPics[9].plate}
-                            ${cowPics[10].rib}
-                            ${cowPics[11].brisket}
-                            ${cowPics[12].chuck}
+                            
                             ${cowPics[13].wholeCow}
  
                             </div>
