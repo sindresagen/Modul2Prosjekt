@@ -272,6 +272,8 @@ body{
   }
 
   #cow {
-    position: relative;
-    top: -500px;
+    position: absolute;
+    top: 200px;
   }
+
+  
