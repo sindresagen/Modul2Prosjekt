@@ -45,7 +45,11 @@ function listPgInfo(i){
     <h2>bruksområder:<p id="cut-uses">${cut.use}</p></h2>
     <img src="${cut.picture}"/>
     `;
+
 }
+
+
+
 
 function picturePgView(){
     let picturePage = `
@@ -56,7 +60,7 @@ function picturePgView(){
                                 <button id="picReturnbtn" class="fa fa-home" onclick="buttonPgView()" style="top:0vw;left:-34vw;"></button>
                             </div>
                             <div id="cow" style="text-align: center"><img src="images/ku2.png" width="1132" height"676" alt="heileKua" usemap="#cowMap"><map id="cowMap" name="cowMap">
-                            <area class="chuck" shape="poly" coords="260,55, 253,90, 280,300, 445,300, 440,100 " alt="chuck" target="_blank" href="./reeeee.html">
+                            <area class="chuck" shape="poly" coords="260,55, 253,90, 280,300, 445,300, 440,100 " alt="chuck" target="_blank" onclick="picturePgInfo(1)">
                             <area class="rib" shape="poly" coords="450,100, 460,297, 666,298, 675,185, 655,104, 558,109" alt="rib" target="_blank" href="./reeeee.html">
                             <area class="brisket" shape="poly" coords="295,318, 333,400, 445,403, 450,312" alt="brisket" target="_blank" href="./reeeee.html">
                             <area class="plate" shape="poly" coords="458,309, 460,403, 660,388, 657,340, 660,312" alt="plate" target="_blank" href="./reeeee.html">

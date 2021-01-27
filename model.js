@@ -18,7 +18,7 @@ const model = {
         { animal: 'chicken', cut: 'breast', use: 'noe kylling bryst IKKE kan brukes til?', info: '', picture: '' },
         
     ],
-
+    test: true,
     quizPage: {
         placeholderMellomLagring:{
             mellomlagringRiktigsvar:{},
