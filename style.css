@@ -96,6 +96,7 @@ body{
   }
 #list-info {
   position: absolute;
+  border: 2px solid black;
   top: 0vh;
   left: 35vw;
   height: 70vh;
@@ -108,7 +109,14 @@ body{
     height: 50px;
     left: -26.7vw;
   }
-
+#pic-info{
+  position: absolute;
+  border: 2px solid black;
+  top: 10vh;
+  left: 60vw;
+  height: 70vh;
+  width: 35vw;
+}
   .picture-page{
     width: 700px;
     height: 700px;
