@@ -17,7 +17,24 @@ const model = {
         { animal: 'chicken', cut: 'breast', chosen:"", use: 'noe kylling bryst IKKE kan brukes til?', info: '', picture: '' },
         
     ],
-    
+    question:  "dafuk dis?",
+    choices: [],
+    selectedRandomCut: "",
+    quiz: [
+        { animal: 'Cattle', name: 'Rib', selected: true, ifTrue:"",},
+        { animal: 'Cattle', name: 'Chuck', selected: false, ifTrue:"", },
+        { animal: 'Cattle', name: 'Brisket', selected: false, },
+        { animal: 'Cattle', name: 'Plate', selected: false, },
+        { animal: 'Cattle', name: 'Sirloin', selected: false, },
+        { animal: 'Cattle', name: 'Top sirloin', selected: false, },
+        { animal: 'Cattle', name: 'Tenderloin', selected: false, },
+        { animal: 'Cattle', name: 'Flank', selected: false, },
+        { animal: 'Cattle', name: 'Bottom sirloin', selected: false, },
+        { animal: 'Cattle', name: 'Rounds', selected: false, },
+        { animal: 'Cattle', name: 'Shank', selected: false, },
+        { animal: 'Cattle', name: 'Short loin', selected: false, },
+      
+    ],
     test: true,
     chosenCut: "chosen",
     tempChosen:"",
