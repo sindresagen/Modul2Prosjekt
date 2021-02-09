@@ -438,3 +438,7 @@ body{
     left: 0vw;
   }
 
+ #pig {
+  position: absolute;
+  top: 200px;
+ }

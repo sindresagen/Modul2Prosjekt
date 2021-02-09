@@ -55,22 +55,56 @@ function picturePgView(){
                                 <button class="buttonPic">KYLLING</button> 
                                 <button id="picReturnbtn" class="fa fa-home" onclick="buttonPgView()" style="top:0vw;left:-34vw;"></button>
                             </div>
-                            <div id="cow" style="text-align: center"><img src="images/ku2.png" width="1132" height"676" alt="heileKua" usemap="#cowMap"><map id="cowMap" name="cowMap">
-                            <area class="chuck" shape="poly" coords="260,55, 253,90, 280,300, 445,300, 440,100 " alt="chuck" target="_blank" href="./reeeee.html">
-                            <area class="rib" shape="poly" coords="450,100, 460,297, 666,298, 675,185, 655,104, 558,109" alt="rib" target="_blank" onclick="doSomething()">
-                            <area class="brisket" shape="poly" coords="295,318, 333,400, 445,403, 450,312" alt="brisket" target="_blank" href="./reeeee.html">
-                            <area class="plate" shape="poly" coords="458,309, 460,403, 660,388, 657,340, 660,312" alt="plate" target="_blank" href="./reeeee.html">
-                            <area class="shortloin" shape="poly" coords="670,103, 685,168, 689,231, 675,297, 805,315, 820,254, 815,173, 700,172, 730,152, 805,135, 793,89" alt="shortloin" target="_blank" href="./reeeee.html">
-                            <area class="sirloin" shape="poly" coords="800,87, 810,134, 900,119, 918,106, 907,73" alt="sirloin" target="_blank" href="./reeeee.html">
-                            <area class="tenderloin" shape="poly" coords="720,167, 800,146, 881,132, 920,120, 930,150, 830,165" alt="tenderloin" target="_blank" href="./reeeee.html">
-                            <area class="topSirloin" shape="poly" coords="823,173, 825,200, 925,198, 942,203, 933,159" alt="topSirloin" target="_blank" href="./reeeee.html">
-                            <area class="bottomSirloin" shape="poly" coords="826,208, 826,257, 822,288, 813,317, 900,343, 925,355, 937,360, 947,296, 942,214, " alt="bottomSirloin" target="_blank" href="./reeeee.html">
-                            <area class="flank" shape="poly" coords="672,310, 668,347, 673,386, 832,374, 912,359, 861,336" alt="flank" target="_blank" href="./reeeee.html">
-                            <area class="round" shape="poly" coords="916,75, 951,197, 958,280, 954,321, 948,359, 1040,359, 1069,275, 1073,177, 1047,91, 1050,54" alt="round" target="_blank" href="./reeeee.html">
-                            <area class="shankR" shape="poly" coords="925,370, 995,446, 1050,450, 1045,367" alt="shankR" target="_blank" href="./reeeee.html">
-                            <area class="shankF" shape="poly" coords="369,412, 395,488, 437,488, 455,414" alt="shankF" target="_blank" href="./reeeee.html">
-                            </map>
-                            </div>
+                            <div id="pig" style="text-align: center"><img src="images/grisNoName.jpg" width="1132" height"676" alt="heileGrisen" usemap="#pigMap">
+                                <map id="pigMap" name="pigMap">
+                                <area class="head" 
+                                      shape="poly" 
+                                      coords="10,151, 8,205, 134,275, 262,307, 327,68, 263,57, 204,74, 183,39, 152,4, 118,38, 121,84, 140,110, 76,149 " 
+                                      alt="chuck" 
+                                      style="cursor: pointer" onclick="doSomething()"
+                                      >
+                                <area class="bladeShoulder" 
+                                      shape="poly" 
+                                      coords="328,66, 290,215, 427,231, 452,129, 485,64, 385,74 " 
+                                      alt="chuck" 
+                                      style="cursor: pointer" onclick="doSomething()"
+                                      >
+                                <area class="armShoulder" 
+                                      shape="poly" 
+                                      coords="293,220, 275,286, 265,313, 314,337, 340,368, 425,476, 469,455, 411,365, 446,361, 428,282, 430,235 " 
+                                      alt="chuck" 
+                                      style="cursor: pointer" onclick="doSomething()" 
+                                      >
+                                <area class="loin" 
+                                      shape="poly" 
+                                      coords="489,66, 452,139, 431,232, 434,285, 716,319, 715,270, 761,177, 814,99, 861,61, 683,55 " 
+                                      alt="chuck" 
+                                      style="cursor: pointer" onclick="doSomething()" 
+                                      >
+                                <area class="spareRib" 
+                                      shape="poly" 
+                                      coords="438,295, 445,362, 659,319,  " 
+                                      alt="chuck" 
+                                      style="cursor: pointer" onclick="doSomething()" 
+                                      >
+                                <area class="side" 
+                                      shape="poly" 
+                                      coords="450,370, 680,408, 750,395, 713,320, 654,324 " 
+                                      alt="chuck" 
+                                      style="cursor: pointer" onclick="doSomething()" 
+                                      >
+                                <area class="hock" 
+                                      shape="poly" 
+                                      coords="425,482, 469,561, 482,558, 492,516, 470,459" 
+                                      alt="chuck" 
+                                      style="cursor: pointer" onclick="doSomething()" 
+                                      >
+                                <area class="leg" 
+                                      shape="poly" 
+                                      coords="860,66, 809,107, 769,162, 718,269, 719,321, 757,393, 840,433, 931,457, 1000,429, 946,381, 1004,361, 1046,292, 1054,242, 1043,210, 972,213, 945,176, 944,136, 959,112, 920,80" 
+                                      alt="chuck" 
+                                      style="cursor: pointer" onclick="doSomething()" 
+                                      >
                         `;
     appHTML.innerHTML = picturePage;
 }

@@ -247,7 +247,7 @@ function chooseCut(cut, index){
 
 }
 function findRandomCut(){
- model.selectedRandomCut = Math.floor(Math.random() * model.quiz.length +1);
+ model.selectedRandomCut = Math.floor(Math.random() * model.quiz.length);
  randomCut(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
  console.log(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
 }
@@ -461,9 +461,12 @@ function randomCut(selected, index) {
         
     }
 
-    if(model.quiz[index].selected = true){
+    if(model.quiz[index].selected == true){
         model.quiz[index].ifTrue = "X";
-        // model.quiz[!index].ifTrue = "nei :^)";
-    };
+        // model.quiz[index].ifTrue = "nei :^)";
+    } else if (model.quiz[index].selected == false) {
+        model.quiz[index].ifTrue = '';
+    }
+    ;
     
 }
