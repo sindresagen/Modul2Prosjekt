@@ -7,9 +7,13 @@ function testFn(thing){
 if(thing != null){
     console.log(thing)
 }else {
-    console.log("click");
+    console.log("null parameter");
 }
 }
+function changeAnimal(animal){
+    model.chosenAnimal = animal;
+}
+
 function defaultChosen(){
     const rib = model.cuts[0];
     const chuck = model.cuts[1];
@@ -35,6 +39,37 @@ function defaultChosen(){
             rounds.chosen = "defaultChosen";
             shank.chosen = "defaultChosen";
             shortLoin.chosen = "defaultChosen";
+
+    const head = model.cuts[18];
+    const bladeShoulder = model.cuts[19];
+    const armShoulder = model.cuts[20];
+    const loin = model.cuts[21];
+    const spareRib = model.cuts[22];
+    const side = model.cuts[23];
+    const leg = model.cuts[24];
+    const hock = model.cuts[25];
+            head.chosen = "defaultChosen";
+            bladeShoulder.chosen = "defaultChosen";
+            armShoulder.chosen = "defaultChosen";
+            loin.chosen = "defaultChosen";
+            spareRib.chosen = "defaultChosen";
+            side.chosen = "defaultChosen";
+            leg.chosen = "defaultChosen";
+            hock.chosen = "defaultChosen";
+
+    const breast = model.cuts[12];
+    const back = model.cuts[13];
+    const chiggunleg = model.cuts[14];
+    const neck = model.cuts[15];
+    const thigh = model.cuts[16];
+    const wings = model.cuts[17];
+            breast.chosen = "defaultChosen";
+            back.chosen = "defaultChosen";
+            chiggunleg.chosen = "defaultChosen";
+            neck.chosen = "defaultChosen";
+            thigh.chosen = "defaultChosen";
+            wings.chosen = "defaultChosen";
+
 }
 
 function chooseCut(cut, index){
@@ -50,6 +85,23 @@ function chooseCut(cut, index){
     const rounds = model.cuts[9];
     const shank = model.cuts[10];
     const shortLoin = model.cuts[11];
+
+    const head = model.cuts[18];
+    const bladeShoulder = model.cuts[19];
+    const armShoulder = model.cuts[20];
+    const loin = model.cuts[21];
+    const spareRib = model.cuts[22];
+    const side = model.cuts[23];
+    const leg = model.cuts[24];
+    const hock = model.cuts[25];
+
+    const breast = model.cuts[12];
+    const back = model.cuts[13];
+    const chiggunleg = model.cuts[14];
+    const neck = model.cuts[15];
+    const thigh = model.cuts[16];
+    const wings = model.cuts[17];
+
     switch(cut){
         case "chuck":
             rib.chosen = "not-chosen";
@@ -243,9 +295,171 @@ function chooseCut(cut, index){
             picturePgView();
             picPgInfo(index)
             break;
+    //piggy
+        case "head":
+            head.chosen = "chosen";
+            bladeShoulder.chosen = "not-chosen";
+            armShoulder.chosen = "not-chosen";
+            loin.chosen = "not-chosen";
+            spareRib.chosen = "not-chosen";
+            side.chosen = "not-chosen";
+            leg.chosen = "not-chosen";
+            hock.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "bladeshoulder":
+            head.chosen = "not-chosen";
+            bladeShoulder.chosen = "chosen";
+            armShoulder.chosen = "not-chosen";
+            loin.chosen = "not-chosen";
+            spareRib.chosen = "not-chosen";
+            side.chosen = "not-chosen";
+            leg.chosen = "not-chosen";
+            hock.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "armshoulder":
+            head.chosen = "not-chosen";
+            bladeShoulder.chosen = "not-chosen";
+            armShoulder.chosen = "chosen";
+            loin.chosen = "not-chosen";
+            spareRib.chosen = "not-chosen";
+            side.chosen = "not-chosen";
+            leg.chosen = "not-chosen";
+            hock.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "loin":
+            head.chosen = "not-chosen";
+            bladeShoulder.chosen = "not-chosen";
+            armShoulder.chosen = "not-chosen";
+            loin.chosen = "chosen";
+            spareRib.chosen = "not-chosen";
+            side.chosen = "not-chosen";
+            leg.chosen = "not-chosen";
+            hock.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "sparerib":
+            head.chosen = "not-chosen";
+            bladeShoulder.chosen = "not-chosen";
+            armShoulder.chosen = "not-chosen";
+            loin.chosen = "not-chosen";
+            spareRib.chosen = "chosen";
+            side.chosen = "not-chosen";
+            leg.chosen = "not-chosen";
+            hock.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "side":
+            head.chosen = "not-chosen";
+            bladeShoulder.chosen = "not-chosen";
+            armShoulder.chosen = "not-chosen";
+            loin.chosen = "not-chosen";
+            spareRib.chosen = "not-chosen";
+            side.chosen = "chosen";
+            leg.chosen = "not-chosen";
+            hock.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "leg":
+            head.chosen = "not-chosen";
+            bladeShoulder.chosen = "not-chosen";
+            armShoulder.chosen = "not-chosen";
+            loin.chosen = "not-chosen";
+            spareRib.chosen = "not-chosen";
+            side.chosen = "not-chosen";
+            leg.chosen = "chosen";
+            hock.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "hock":
+            head.chosen = "not-chosen";
+            bladeShoulder.chosen = "not-chosen";
+            armShoulder.chosen = "not-chosen";
+            loin.chosen = "not-chosen";
+            spareRib.chosen = "not-chosen";
+            side.chosen = "not-chosen";
+            leg.chosen = "not-chosen";
+            hock.chosen = "chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+
+            //chiggen
+        case "breast":
+            breast.chosen = "chosen";
+            back.chosen = "not-chosen";
+            chiggunleg.chosen = "not-chosen";
+            neck.chosen = "not-chosen";
+            thigh.chosen = "not-chosen";
+            wings.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "back":
+            breast.chosen = "not-chosen";
+            back.chosen = "chosen";
+            chiggunleg.chosen = "not-chosen";
+            neck.chosen = "not-chosen";
+            thigh.chosen = "not-chosen";
+            wings.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "chiggenleg":
+            breast.chosen = "not-chosen";
+            back.chosen = "not-chosen";
+            chiggunleg.chosen = "chosen";
+            neck.chosen = "not-chosen";
+            thigh.chosen = "not-chosen";
+            wings.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "neck":
+            breast.chosen = "not-chosen";
+            back.chosen = "not-chosen";
+            chiggunleg.chosen = "not-chosen";
+            neck.chosen = "chosen";
+            thigh.chosen = "not-chosen";
+            wings.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "thigh":
+            breast.chosen = "not-chosen";
+            back.chosen = "not-chosen";
+            chiggunleg.chosen = "not-chosen";
+            neck.chosen = "not-chosen";
+            thigh.chosen = "chosen";
+            wings.chosen = "not-chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
+        case "wings":
+            breast.chosen = "not-chosen";
+            back.chosen = "not-chosen";
+            chiggunleg.chosen = "not-chosen";
+            neck.chosen = "not-chosen";
+            thigh.chosen = "not-chosen";
+            wings.chosen = "chosen";
+            picturePgView();
+            picPgInfo(index)
+            break;
     }
 
 }
+// PORK view thing, yes.
+
+//quizmode stoofs
 function findRandomCut(){
  model.selectedRandomCut = Math.floor(Math.random() * model.quiz.length);
  randomCut(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);

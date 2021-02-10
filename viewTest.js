@@ -55,60 +55,48 @@ function picturePgView(){
                                 <button class="buttonPic">KYLLING</button> 
                                 <button id="picReturnbtn" class="fa fa-home" onclick="buttonPgView()" style="top:0vw;left:-34vw;"></button>
                             </div>
-                            <div id="pig" style="text-align: center"><img src="images/grisNoName.jpg" width="1132" height"676" alt="heileGrisen" usemap="#pigMap">
-                                <map id="pigMap" name="pigMap">
-                                <area class="head" 
+                            <div id="chiggen" style="text-align: center"><img src="images/chickun.png" width="1132" height"676" alt="heileKyllingen" usemap="#chiggenMap">
+                                <map id="chiggenMap" name="chiggenMap">
+                                <area class="neck" 
                                       shape="poly" 
-                                      coords="10,151, 8,205, 134,275, 262,307, 327,68, 263,57, 204,74, 183,39, 152,4, 118,38, 121,84, 140,110, 76,149 " 
+                                      coords="387,58, 350,96, 377,127, 391,147, 361,235, 397,245, 430,243, 464,223, 470,213, 460,141, 443,105, 425,88, 431,75, 415,50" 
                                       alt="chuck" 
-                                      style="cursor: pointer" onclick="doSomething()"
-                                      >
-                                <area class="bladeShoulder" 
+                                      style="cursor: pointer" onclick="doSomething()">
+                                <area class="breast" 
                                       shape="poly" 
-                                      coords="328,66, 290,215, 427,231, 452,129, 485,64, 385,74 " 
+                                      coords="357,241, 340,292, 339,339, 343,364, 384,412, 462,479, 500,387, 499,362, 466,348, 442,324, 443,291, 460,269, 421,247, 394,248" 
                                       alt="chuck" 
-                                      style="cursor: pointer" onclick="doSomething()"
-                                      >
-                                <area class="armShoulder" 
+                                      style="cursor: pointer" onclick="doSomething()">
+                                <area class="wing" 
                                       shape="poly" 
-                                      coords="293,220, 275,286, 265,313, 314,337, 340,368, 425,476, 469,455, 411,365, 446,361, 428,282, 430,235 " 
+                                      coords="464,270, 452,280, 444,299, 448,323, 462,337, 494,351, 540,356, 565,350, 590,336, 573,332, 559,324, 551,310, 541,290, 523,272, 496,263, 474,265" 
                                       alt="chuck" 
-                                      style="cursor: pointer" onclick="doSomething()" 
-                                      >
-                                <area class="loin" 
+                                      style="cursor: pointer" onclick="doSomething()">
+                                <area class="back" 
                                       shape="poly" 
-                                      coords="489,66, 452,139, 431,232, 434,285, 716,319, 715,270, 761,177, 814,99, 861,61, 683,55 " 
+                                      coords="474,221, 454,238, 424,246, 451,257, 457,266, 477,259, 497,259, 517,266, 539,282, 554,305, 568,323, 583,329, 603,325, 595,340, 576,352, 595,362, 608,370, 606,331, 597,297, 587,272, 579,256, 558,264, 538,264, 493,248, 480,232" 
                                       alt="chuck" 
-                                      style="cursor: pointer" onclick="doSomething()" 
-                                      >
-                                <area class="spareRib" 
-                                      shape="poly" 
-                                      coords="438,295, 445,362, 659,319,  " 
-                                      alt="chuck" 
-                                      style="cursor: pointer" onclick="doSomething()" 
-                                      >
-                                <area class="side" 
-                                      shape="poly" 
-                                      coords="450,370, 680,408, 750,395, 713,320, 654,324 " 
-                                      alt="chuck" 
-                                      style="cursor: pointer" onclick="doSomething()" 
-                                      >
-                                <area class="hock" 
-                                      shape="poly" 
-                                      coords="425,482, 469,561, 482,558, 492,516, 470,459" 
-                                      alt="chuck" 
-                                      style="cursor: pointer" onclick="doSomething()" 
-                                      >
+                                      style="cursor: pointer" onclick="doSomething()">
                                 <area class="leg" 
                                       shape="poly" 
-                                      coords="860,66, 809,107, 769,162, 718,269, 719,321, 757,393, 840,433, 931,457, 1000,429, 946,381, 1004,361, 1046,292, 1054,242, 1043,210, 972,213, 945,176, 944,136, 959,112, 920,80" 
+                                      coords="514,405, 494,428, 483,457, 483,482, 501,509, 514,509, 550,497, 572,478, 586,468, 583,426, 565,403, 548,396, 525,402" 
                                       alt="chuck" 
-                                      style="cursor: pointer" onclick="doSomething()" 
-                                      >
+                                      style="cursor: pointer" onclick="doSomething1()">
+                                <area class="thigh" 
+                                      shape="poly" 
+                                      coords="508,362, 503,391, 489,424, 460,483, 467,499, 498,515, 545,508, 570,503, 597,486, 634,441, 639,428, 639,411, 611,376, 590,363, 571,355, 540,364" 
+                                      alt="chuck" 
+                                      style="cursor: pointer" onclick="doSomething()">
+                                
+                                
                         `;
     appHTML.innerHTML = picturePage;
 }
 
 function doSomething() {
     console.log('hei');
+}
+
+function doSomething1() {
+    console.log('hei på deg');
 }

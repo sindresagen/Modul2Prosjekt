@@ -72,3 +72,45 @@
 //                             ${cowPics[13].wholeCow}
  
 //                             </div>
+// <area class="bladeShoulder" 
+//                                       shape="poly" 
+//                                       coords="328,66, 290,215, 427,231, 452,129, 485,64, 385,74 " 
+//                                       alt="chuck" 
+//                                       style="cursor: pointer" onclick="doSomething()"
+//                                       >
+//                                 <area class="armShoulder" 
+//                                       shape="poly" 
+//                                       coords="293,220, 275,286, 265,313, 314,337, 340,368, 425,476, 469,455, 411,365, 446,361, 428,282, 430,235 " 
+//                                       alt="chuck" 
+//                                       style="cursor: pointer" onclick="doSomething()" 
+//                                       >
+//                                 <area class="loin" 
+//                                       shape="poly" 
+//                                       coords="489,66, 452,139, 431,232, 434,285, 716,319, 715,270, 761,177, 814,99, 861,61, 683,55 " 
+//                                       alt="chuck" 
+//                                       style="cursor: pointer" onclick="doSomething()" 
+//                                       >
+//                                 <area class="spareRib" 
+//                                       shape="poly" 
+//                                       coords="438,295, 445,362, 659,319,  " 
+//                                       alt="chuck" 
+//                                       style="cursor: pointer" onclick="doSomething()" 
+//                                       >
+//                                 <area class="side" 
+//                                       shape="poly" 
+//                                       coords="450,370, 680,408, 750,395, 713,320, 654,324 " 
+//                                       alt="chuck" 
+//                                       style="cursor: pointer" onclick="doSomething()" 
+//                                       >
+//                                 <area class="hock" 
+//                                       shape="poly" 
+//                                       coords="425,482, 469,561, 482,558, 492,516, 470,459" 
+//                                       alt="chuck" 
+//                                       style="cursor: pointer" onclick="doSomething()" 
+//                                       >
+//                                 <area class="leg" 
+//                                       shape="poly" 
+//                                       coords="860,66, 809,107, 769,162, 718,269, 719,321, 757,393, 840,433, 931,457, 1000,429, 946,381, 1004,361, 1046,292, 1054,242, 1043,210, 972,213, 945,176, 944,136, 959,112, 920,80" 
+//                                       alt="chuck" 
+//                                       style="cursor: pointer" onclick="doSomething()" 
+//                                       ></area>

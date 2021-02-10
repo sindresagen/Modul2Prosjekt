@@ -163,25 +163,6 @@ body{
     justify-content: center;
   }
 
-  .buttonPicQuiz{
-    position: relative;
-    height: 80px;
-    top: -10vh;
-    right: -15vw;
-    border: none;
-    color: black;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 3rem;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-  }
-
   #pic-info h1 {
     font-size: 4rem;
     font-family: 'Permanent Marker';
@@ -430,6 +411,31 @@ body{
 
   /* QuizMode Page */
 
+  #quizHeadline {
+    position: absolute;
+    left: 70vw;
+    font-size: 4rem;
+    font-family: 'Permanent Marker';
+  }
+  
+  .buttonPicQuiz{
+    position: relative;
+    height: 80px;
+    top: 2vh;
+    right: -15vw;
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
   #quiz-info img{
     position: relative;
     height: 280px;
@@ -441,4 +447,136 @@ body{
  #pig {
   position: absolute;
   top: 200px;
+ }
+
+ .head-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2rem;
+  top: 13vh;
+  left: 7vw;
+ }
+
+ .bladeshoulder-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 10vh;
+  left: 15vw;
+  transform: rotate(-40deg);
+ }
+
+ .armshoulder-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 27vh;
+  left: 14vw;
+  transform: rotate(54deg);
+ }
+
+ .loin-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2rem;
+  top: 13vh;
+  left: 30vw;
+ }
+
+ .sparerib-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 27vh;
+  left: 24vw;
+
+ }
+
+ .side-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2rem;
+  top: 29.5vh;
+  left: 31vw;
+
+ }
+
+ .leg-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 2rem;
+  top: 20vh;
+  left: 44vw;
+ }
+
+ .hock-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 43.5vh;
+  left: 22.3vw;
+  transform: rotate(60deg);
+ }
+
+ #chiggen {
+   position: absolute;
+   top: 200px;
+ }
+
+ .neck-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 14vh;
+  left: 20.3vw;
+ }
+
+ .breast-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 25vh;
+  left: 20.3vw;
+ }
+
+ .wings-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 26vh;
+  left: 24vw;
+ }
+
+ .back-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 19vh;
+  left: 26vw;
+  transform: rotate(18deg);
+ }
+
+ .chiggenleg-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 38vh;
+  left: 26.5vw;
+ }
+
+ .thigh-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 32.6vh;
+  left: 28.5vw;
+  transform: rotate(22deg);
+ }
+
+ .breast-txt {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  top: 14vh;
+  left: 20.3vw;
  }
