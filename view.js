@@ -269,13 +269,13 @@ function picturePgView(){
                                     <map id="chiggenMap" name="chiggenMap">
                                     <h2 class="neck-txt ${model.cuts[15].chosen}"
                                           onclick="picPgInfo(15); chooseCut('neck', 15)">Neck</h2>
-                                    <area class="neck" 
-                                          shape="poly" 
-                                          coords="387,58, 350,96, 377,127, 391,147, 361,235, 397,245, 430,243, 464,223, 470,213, 460,141, 443,105, 425,88, 431,75, 415,50" 
-                                          alt="chuck" 
-                                          style="cursor: pointer" onclick="picPgInfo(15); chooseCut('neck', 15)>
+                                   <area class="neck"
+                                        shape="poly"
+                                        coords="387,58, 350,96, 377,127, 391,147, 361,235, 397,245, 430,243, 464,223, 470,213, 460,141, 443,105, 425,88, 431,75, 415,50"
+                                        alt="neck"
+                                        style="cursor: pointer" onclick="picPgInfo(15); chooseCut('neck', 15)">
                                     <h2 class="breast-txt ${model.cuts[12].chosen}"
-                                          onclick="picPgInfo(18); chooseCut('breast', 12)">Breast</h2>
+                                          onclick="picPgInfo(12); chooseCut('breast', 12)">Breast</h2>
                                     <area class="breast" 
                                           shape="poly" 
                                           coords="357,241, 340,292, 339,339, 343,364, 384,412, 462,479, 500,387, 499,362, 466,348, 442,324, 443,291, 460,269, 421,247, 394,248" 
