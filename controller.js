@@ -466,18 +466,18 @@ function findRandomCut(){
  console.log(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
 }
 function randomCut(selected, index) {
-    const rib = model.quiz[index]; 
-    const chuck = model.quiz[index];
-    const brisket = model.quiz[index];
-    const plate = model.quiz[index];
-    const sirloin = model.quiz[index];
-    const topSirloin = model.quiz[index];
-    const tenderloin = model.quiz[index];
-    const flank = model.quiz[index];
-    const bottomSirloin = model.quiz[index];
-    const rounds = model.quiz[index];
-    const shank = model.quiz[index];
-    const shortLoin = model.quiz[index];
+    const rib = model.quiz[0]; 
+    const chuck = model.quiz[1];
+    const brisket = model.quiz[2];
+    const plate = model.quiz[3];
+    const sirloin = model.quiz[4];
+    const topSirloin = model.quiz[5];
+    const tenderloin = model.quiz[6];
+    const flank = model.quiz[7];
+    const bottomSirloin = model.quiz[8];
+    const rounds = model.quiz[9];
+    const shank = model.quiz[10];
+    const shortLoin = model.quiz[11];
 
     switch(selected){
         case "Chuck":
@@ -494,6 +494,7 @@ function randomCut(selected, index) {
             shank.selected = false;
             shortLoin.selected = false;
             quizPgView(index);
+            ifSelected(index);
             break;
         case "Rib":
             rib.selected = true;
@@ -508,6 +509,7 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
         case "Brisket":
@@ -523,6 +525,7 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
         case "Plate":
@@ -538,6 +541,7 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
         case "Sirloin":
@@ -553,6 +557,7 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
         case "Top sirloin":
@@ -568,6 +573,7 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
         case "Tenderloin":
@@ -583,6 +589,7 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
         case "Flank":
@@ -598,6 +605,7 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
         case "Bottom sirloin":
@@ -613,6 +621,7 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
         case "Rounds":
@@ -628,6 +637,7 @@ function randomCut(selected, index) {
             rounds.selected = true;
             shank.selected = false;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
         case "Shank":
@@ -643,9 +653,10 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = true;
             shortLoin.selected = false;
+            ifSelected(index);
             quizPgView(index);
             break;
-        case "Short loin":
+        case "shortloin":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -658,17 +669,40 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = true;
+            ifSelected(index);
             quizPgView(index);
             break;
         
-    }
+    } 
+}
 
+function ifSelected(index){
+    const rib = model.quiz[0]; 
+    const chuck = model.quiz[1];
+    const brisket = model.quiz[2];
+    const plate = model.quiz[3];
+    const sirloin = model.quiz[4];
+    const topSirloin = model.quiz[5];
+    const tenderloin = model.quiz[6];
+    const flank = model.quiz[7];
+    const bottomSirloin = model.quiz[8];
+    const rounds = model.quiz[9];
+    const shank = model.quiz[10];
+    const shortLoin = model.quiz[11];
+
+    rib.ifTrue = "";
+    chuck.ifTrue = "";
+    brisket.ifTrue = "";
+    plate.ifTrue = "";
+    sirloin.ifTrue = "";
+    topSirloin.ifTrue = "";
+    tenderloin.ifTrue = "";
+    flank.ifTrue = "";
+    bottomSirloin.ifTrue = "";
+    rounds.ifTrue = "";
+    shank.ifTrue = "";
+    shortLoin.ifTrue = "";
     if(model.quiz[index].selected == true){
         model.quiz[index].ifTrue = "X";
-        // model.quiz[index].ifTrue = "nei :^)";
-    } else if (model.quiz[index].selected == false) {
-        model.quiz[index].ifTrue = '';
     }
-    ;
-    
 }
