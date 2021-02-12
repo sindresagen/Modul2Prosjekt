@@ -480,7 +480,7 @@ function randomCut(selected, index) {
     const shortLoin = model.quiz[index];
 
     switch(selected){
-        case "chuckQuiz":
+        case "Chuck":
             rib.selected = false;
             chuck.selected = true;
             brisket.selected = false;
@@ -493,10 +493,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "ribQuiz":
+        case "Rib":
             rib.selected = true;
             chuck.selected = false;
             brisket.selected = false;
@@ -509,10 +508,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "brisketQuiz":
+        case "Brisket":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = true;
@@ -525,10 +523,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "plateQuiz":
+        case "Plate":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -541,10 +538,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "sirloinQuiz":
+        case "Sirloin":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -557,10 +553,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "topsirloinQuiz":
+        case "Top sirloin":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -573,10 +568,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "tenderloinQuiz":
+        case "Tenderloin":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -589,10 +583,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "flankQuiz":
+        case "Flank":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -605,10 +598,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "bottomsirloinQuiz":
+        case "Bottom sirloin":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -621,10 +613,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "roundsQuiz":
+        case "Rounds":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -637,10 +628,9 @@ function randomCut(selected, index) {
             rounds.selected = true;
             shank.selected = false;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "shankQuiz":
+        case "Shank":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -653,10 +643,9 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = true;
             shortLoin.selected = false;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
-        case "shortloinQuiz":
+        case "Short loin":
             rib.selected = false;
             chuck.selected = false;
             brisket.selected = false;
@@ -669,8 +658,7 @@ function randomCut(selected, index) {
             rounds.selected = false;
             shank.selected = false;
             shortLoin.selected = true;
-            quizPgView();
-            quizPgInfo(index)
+            quizPgView(index);
             break;
         
     }

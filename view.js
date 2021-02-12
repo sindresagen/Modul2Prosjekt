@@ -4,7 +4,7 @@ function buttonPgView() {
                         <div class="button-page">
                             <img src="https://cdn.discordapp.com/attachments/796668478261297152/800658341361614858/ButcherIT_logo_1.png" alt="ButcherIT Logo">
                             <button class="button button5" onclick="picturePgView()">Bilde modus</button>
-                            <button class="button button5" onclick="quizPgView()">Quiz</button>
+                            <button class="button button5" onclick="findRandomCut()">Quiz</button>
                             <button class="button button5" onclick="listPgView()">Liste modus</button>
                         </div>
                       </div>`;
@@ -340,7 +340,8 @@ function picPgInfo(index){
     picInfoDiv.innerHTML = pictureInfo;
 }
 
-function quizPgView() {
+function quizPgView(index) {
+    const cut = model.cuts[index];
     let quizPage = `
                     <button id="returnbtn" class="fa fa-home" onclick="buttonPgView()"></button>
                     <div class="picture-page"> 
@@ -432,20 +433,11 @@ function quizPgView() {
                                 </map>
                             </div>
                             <div id="quiz-info">
-                        
+                              <h1>${model.question}</h1>
+                              <img src="${cut.picture}"/>
+                              <h2>Svaralternativer: <p id="cut-uses">${model.choices}</p></h2>
                             </div>
                 
     `;
     appHTML.innerHTML = quizPage;
 }
-
-function quizPgInfo(index){
-      const quizInfoDiv = document.getElementById("quiz-info");
-      const cut = model.cuts[index];
-      quizInfo = `
-      <h1>${model.question}</h1>
-      <img src="${cut.picture}"/>
-      <h2>Svaralternativer: <p id="cut-uses">${model.choices}</p></h2>
-      `;
-      quizInfoDiv.innerHTML = quizInfo;
-  }
