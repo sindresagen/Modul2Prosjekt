@@ -462,9 +462,16 @@ function chooseCut(cut, index){
 //quizmode stoofs
 function findRandomCut(){
  model.selectedRandomCut = Math.floor(Math.random() * model.quiz.length);
+ pushChoices(model.quiz[model.selectedRandomCut].name);
  randomCut(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
- console.log(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
+//  console.log(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
 }
+
+function pushChoices(answer){
+    model.choices = [];
+    model.choices.push(answer);
+}
+
 function randomCut(selected, index) {
     const rib = model.quiz[0]; 
     const chuck = model.quiz[1];

@@ -435,7 +435,12 @@ function quizPgView(index) {
                             <div id="quiz-info">
                               <h1>${model.question}</h1>
                               <img src="${cut.picture}"/>
-                              <h2>Svaralternativer: <p id="cut-uses">${model.choices}</p></h2>
+                              <h2>Svaralternativer: 
+                                 <li>${model.choices[0]}</li>
+                                 <li>${model.choices[1]}</li>
+                                 <li>${model.choices[2]}</li>
+                                 <li>${model.choices[3]}</li>
+                              </h2>
                             </div>
                 
     `;
