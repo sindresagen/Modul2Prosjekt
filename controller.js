@@ -462,13 +462,22 @@ function chooseCut(cut, index){
 //quizmode stoofs
 function findRandomCut(){
  model.selectedRandomCut = Math.floor(Math.random() * model.quiz.length);
- pushChoices(model.quiz[model.selectedRandomCut].name);
+ pushChoices(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
  randomCut(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
 //  console.log(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
 }
 
-function pushChoices(answer){
+function pushChoices(answer, answerIndex){
     model.choices = [];
+    model.tempArr = [];
+    model.rightAnswer = answer;
+    for (let i=0;i<12;i++){model.tempArr.push(model.cuts[i])}
+    model.tempArr.splice(answerIndex ,1);
+    for (let j=0;j<3;j++){
+        let tempArrLength = Math.floor(Math.random()*model.tempArr.length);
+        model.choices.push(model.tempArr[tempArrLength].name)
+        model.tempArr.splice(tempArrLength,1);
+    }
     model.choices.push(answer);
 }
 

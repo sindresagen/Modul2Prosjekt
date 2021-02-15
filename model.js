@@ -34,6 +34,7 @@ const model = {
     question: "dafuk dis?",
     rightAnswer: "",
     choices: [],
+    tempArr:[],
     selectedRandomCut: "",
     quiz: [
         { animal: 'Cattle', name: 'Rib', selected: true, ifTrue:"",},
