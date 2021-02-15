@@ -479,7 +479,20 @@ function pushChoices(answer, answerIndex){
         model.tempArr.splice(tempArrLength,1);
     }
     model.choices.push(answer);
+    shuffle(model.choices)
 }
+
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
+  }
 
 function randomCut(selected, index) {
     const rib = model.quiz[0]; 
