@@ -13,6 +13,7 @@ function buttonPgView() {
 
 function listPgView() {
     let listPage = `<div id="listDiv">
+    
                         <button id="returnbtn" class="fa fa-home" onclick="buttonPgView()"></button>
                         <div class="list">
                             <ul id="list-elements">
