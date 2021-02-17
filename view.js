@@ -15,6 +15,9 @@ function listPgView() {
     let listPage = `<div id="listDiv">
     
                         <button id="returnbtn" class="fa fa-home" onclick="buttonPgView()"></button>
+                        <button class="buttonPic" onclick="changeAnimal('Cattle')">STORFE</button>
+                        <button class="buttonPic">SVIN</button>
+                        <button class="buttonPic">KYLLING</button>
                         <div class="list">
                             <ul id="list-elements">
                             <h2>Velg ett stykke:</h2>
@@ -451,14 +454,14 @@ function quizPgView(index) {
 function resultView(answer){
 if(answer == model.rightAnswer){
       appHTML.innerHTML = `
-      <h1>you was right.</h1>
-      <button onclick="findRandomCut()">New Quiz</button>
+      <h1 id="answerHeadline">Du svarte riktig!</h1>
+      <button id="newQuizBtn" onclick="findRandomCut()">Nytt spørsmål</button>
       `;
 }else {
       appHTML.innerHTML = `
-      <h1>you was wrong</h1>
-      <h2>right answer was: ${model.rightAnswer}</h2>
-      <button onclick="findRandomCut()">New Quiz</button>
+      <h1 id="answerHeadline">Du svarte feil. </h1>
+      <h2 id="rightAnswerIs">Riktig svar er: ${model.rightAnswer}</h2>
+      <button id="newQuizBtn" onclick="findRandomCut()">Nytt spørsmål</button>
       `;
 }
 }

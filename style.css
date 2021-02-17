@@ -413,7 +413,7 @@ body{
 
   #quizHeadline {
     position: absolute;
-    left: 70vw;
+    left: 72vw;
     font-size: 4rem;
     font-family: 'Permanent Marker';
   }
@@ -579,4 +579,25 @@ body{
   font-size: 1.5rem;
   top: 29vh;
   left: 19vw;
+ }
+
+ #answerHeadline {
+  position: absolute;
+  left: 38vw;
+  font-size: 4rem;
+  font-family: 'Permanent Marker';
+ }
+
+ #rightAnswerIs {
+  position: absolute;
+  left: 33vw;
+  top: 10vh;
+  font-size: 4rem;
+ }
+
+ #newQuizBtn {
+  position: absolute;
+  left: 43vw;
+  top: 25vh;
+  font-size: 2rem;
  }

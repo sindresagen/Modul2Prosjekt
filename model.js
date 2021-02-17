@@ -31,7 +31,7 @@ const model = {
         { animal: 'Pork', name: 'Hock', chosen:"defaultChosen", use: 'Svineknoke og labb. Ofte røkt.', info: 'Svineknoke brukes ferskt, lettsaltet eller lettsaltet og røkt. Brukes i retter som ertesuppe, betasuppe og lapskaus. Labb brukes lettsaltet og kokt til syltelabber.', picture: 'https://media.discordapp.net/attachments/796668478261297152/808281888849526804/Pork-hock.PNG' },
     ],
     chosenAnimal: "Cattle",
-    question: "dafuk dis?",
+    question: "Hvilket stykke på dyret er dette?",
     rightAnswer: "",
     choices: [],
     tempArr:[],
