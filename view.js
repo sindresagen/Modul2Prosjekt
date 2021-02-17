@@ -13,11 +13,10 @@ function buttonPgView() {
 
 function listPgView() {
     let listPage = `<div id="listDiv">
-    
                         <button id="returnbtn" class="fa fa-home" onclick="buttonPgView()"></button>
-                        <button class="buttonPic" onclick="changeAnimal('Cattle')">STORFE</button>
-                        <button class="buttonPic">SVIN</button>
-                        <button class="buttonPic">KYLLING</button>
+                        <button class="buttonPic" onclick="changeAnimal('Cattle'); listPgView()">STORFE</button>
+                        <button class="buttonPic" onclick="changeAnimal('Pork'); listPgView()">SVIN</button>
+                        <button class="buttonPic" onclick="changeAnimal('Chicken'); listPgView()">KYLLING</button> 
                         <div class="list">
                             <ul id="list-elements">
                             <h2>Velg ett stykke:</h2>
@@ -33,7 +32,7 @@ function listPgView() {
     list = ``;
     for (i = 0; i < model.cuts.length; i++) {
         const cut = model.cuts[i];
-        if (cut.animal == 'Cattle') {
+        if (cut.animal == model.chosenAnimal) {
             list += `<li id="list-${i}" onclick="listPgInfo(${i})" style="cursor: pointer;">${cut.name}</li>`;
         }
     }
