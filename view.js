@@ -437,13 +437,28 @@ function quizPgView(index) {
                               <h1>${model.question}</h1>
                               <img src="${cut.picture}"/>
                               <h2>Svaralternativer: 
-                                 <li>${model.choices[0]}</li>
-                                 <li>${model.choices[1]}</li>
-                                 <li>${model.choices[2]}</li>
-                                 <li>${model.choices[3]}</li>
+                                 <li onclick="resultView(this.innerHTML)" style="cursor: pointer">${model.choices[0]}</li>
+                                 <li onclick="resultView(this.innerHTML)" style="cursor: pointer">${model.choices[1]}</li>
+                                 <li onclick="resultView(this.innerHTML)" style="cursor: pointer">${model.choices[2]}</li>
+                                 <li onclick="resultView(this.innerHTML)" style="cursor: pointer">${model.choices[3]}</li>
                               </h2>
                             </div>
                 
     `;
     appHTML.innerHTML = quizPage;
+}
+
+function resultView(answer){
+if(answer == model.rightAnswer){
+      appHTML.innerHTML = `
+      <h1>you was right.</h1>
+      <button onclick="findRandomCut()">New Quiz</button>
+      `;
+}else {
+      appHTML.innerHTML = `
+      <h1>you was wrong</h1>
+      <h2>right answer was: ${model.rightAnswer}</h2>
+      <button onclick="findRandomCut()">New Quiz</button>
+      `;
+}
 }
