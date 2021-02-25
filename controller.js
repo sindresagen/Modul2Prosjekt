@@ -464,7 +464,6 @@ function findRandomCut(){
  model.selectedRandomCut = Math.floor(Math.random() * model.quiz.length);
  pushChoices(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
  randomCut(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
-//  console.log(model.quiz[model.selectedRandomCut].name, model.selectedRandomCut);
 }
 
 function pushChoices(answer, answerIndex){
